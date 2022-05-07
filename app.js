@@ -78,6 +78,14 @@ form.addEventListener("submit", function(e){
         password.classList.add("match")
     }
 
-
+    //match password and password confirm
+    if(password.value !== passwordConfirm.value){
+        passwordConfirm.nextElementSibling.classList.add("visible")
+        passwordConfirm.classList.add("red")
+        passwordConfirm.classList.remove("match")
+    }else{
+        passwordConfirm.nextElementSibling.classList.remove("visible")
+        passwordConfirm.classList.add("match")
+    }
 })
 
