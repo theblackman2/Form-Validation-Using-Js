@@ -3,11 +3,17 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    transition: .5s;
 }
 
 input,
 button{
     all: unset;
+}
+
+button:hover{
+    opacity: .7;
+    cursor: pointer;
 }
 
 body{
@@ -53,6 +59,15 @@ body{
     color: #f00;
     opacity: .8;
     display: none;
+}
+
+.visible{
+    display: block !important;
+}
+
+.red{
+    border: 1px solid red !important;
+    color: #f00;
 }
 
 button.submit{
